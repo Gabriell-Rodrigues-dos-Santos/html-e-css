@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+  <h1>Cadastro</h1>
+    
+  <form action=""method="post" >
+    <label for="Nome">Nome:</label><br>
+        <input type="text" name="nome" placeholder="Digite seu nome"> <br> <br>
+
+        <label for="Sobrenome">Sobrenome:</label><br>
+        <input type="text" name="nome" placeholder="Digite seu Sobrenome"> <br> <br>
+
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" placeholder="Digite seu Email"><br><br>
+        
+        <label for="telefone">Telefone</label><br>
+        <input type="tel" name="telefone" placeholder="Digite seu Telefone"><br><br>
+       
+        <label for="celular">Whatsapp/Celular</label><br>
+          <input type="cel" name="celular" placeholder="Digite seu Número"><br><br>
+   
+        <label for="Data">Data:</label><br>
+        <input type="date" name="Data"><br><br>
+   
+        <label for="cpf">CPF:</label><br>
+        <input type="cpf" name="cpf" placeholder="Digite seu CPF"><br><br>
+
+        <label for="rg">RG:</label><br>
+        <input type="rg" name="rg" placeholder="Digite seu RG"><br><br>
+
+        <label for="endereco">Endereço:</label><br>
+        <input type="endereco" name="endereco" placeholder="Digite seu Endereço"><br><br>
+
+        <label for="numero">Número:</label><br>
+        <input type="number" name="numero" placeholder="Digite seu Número"><br><br>
+
+        <label for="complemento">Complemento:</label><br>
+        <input type="complemento" name="complemento" placeholder="Não Obrigatório"><br><br>
+
+        <label for="bairro">Bairro:</label><br>
+        <input type="bairro" name="bairro" placeholder="Digite seu Bairro"><br><br>
+
+        <label for="cidade">Cidade:</label><br>
+        <input type="city" name="cidade" placeholder="Digite sua Cidade"><br><br>
+        
+        <label for="estados">Estados</label><BR></BR>
+        <select name="estado" id="estado"></BR>
+            <option value="sp">SP</option>  
+         <option value="mg">MG</option> 
+         <option value="rj">RJ</option>
+        </select><br><br>
+        
+        <label for="cep">CEP:</label><br>
+        <input type="cep" name="cep" placeholder="Digite seu CEP"><br><br>
+
+        <label for="genero">Gênero</label><BR>
+        <select name="genero" id="genero"></BR>
+            <option value="masculino">Masculino</option>  
+         <option value="feminino">Feminino</option> 
+         <option value="prefiro não informar">Prefiro não informar</option>
+        </select><br><br>
+         
+        <label for="estado civil">Estado Civil</label><BR>
+            <select name="estado civil" id="estado civil"></BR>
+                <option value="casado">Casado</option>  
+             <option value="solteiro">Solteiro</option> 
+             <option value="namorando">Namorando</option>
+            </select><br><br>
+         
+         
+          
+
+          
+
+           <label for="anexar arquivo">Anexar Arquivo</label><br>
+           <input type="file" name="arquivo"><br><br>
+           <button id="enviar">Enviar</button>
+           <button id="cancelar" type="reset">Cancelar</button><br><br>
+        </form> 
+       <p>Já tem conta? <a href="http://127.0.0.1:5500/Aula%204/login.html">Voltar para o Login</a></p>
+
+</body>
+</html>
+
+
+    <!--O metodo post pega as informações e envia para o banco de dados-->  
+    <!--form é a tag utilizada para criar formularios-->
+    <!-- a tag imput é uma tag de entrada de dados-->
+     <!--Label é para criar uma legenda-->
+     <!--placeholder ajuda o usuario a prencher os formularios-->9
