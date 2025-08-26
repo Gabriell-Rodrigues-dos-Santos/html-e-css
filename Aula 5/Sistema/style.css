@@ -1,0 +1,26 @@
+body{
+    background-color: azure;
+    font-family: Arial;
+}
+
+button{
+    background-color: #c6f300;
+    color: black;
+    padding: 10px;
+    margin: 5px; 
+    border: none;
+}
+
+.container{
+      background-color: white;
+      padding: 20px;
+      margin: 20px;
+}
+
+.formulario{
+    background-color: #e6e9da4e;
+    padding: 15px;
+    margin: 10px;
+}
+
+
