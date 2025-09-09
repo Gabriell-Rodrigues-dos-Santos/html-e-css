@@ -1,0 +1,66 @@
+ /* 1. TAG */
+    p { color: blue; }
+
+    /* 2. ID */
+    #titulo { background: yellow; }
+
+    /* 3. CLASSE */
+    .subtitulo { color: green; }
+
+    /* 4. TAG */
+    li { color: purple; }
+
+    /* 5. CLASSE */
+    .caixa1 { background: lightcoral; padding: 10px; }
+    .caixa2 { background: lightblue; padding: 10px; }
+
+    /* 6. AGRUPADO */
+    p, h2, h3 { color: darkorange; }
+
+    /* 7. ID */
+    #centralizado { text-align: center; }
+
+    /* 8. ID */
+    #link1 { color: red; }
+    #link2 { color: green; }
+
+    /* 9. CLASSE */
+    .negrito { font-weight: bold; }
+
+    /* 10. TAG */
+    img { border: 2px solid black; width: 100px; }
+
+    /* 11. DESCENDENTE */
+    div p { color: brown; }
+
+    /* 12. CLASSE */
+    .par1 { color: teal; }
+    .par2 { color: darkred; }
+
+    /* 13. ID */
+    #fonte { font-family: Arial, sans-serif; }
+
+    /* 14. CLASSE */
+    .bold { font-weight: bold; }
+    .italic { font-style: italic; }
+    .underline { text-decoration: underline; }
+
+    /* 15. DESCENDENTE */
+    div h3 { color: blueviolet; }
+
+    /* 16. ID */
+    #caixaVermelha { background: red; padding: 10px; }
+    #caixaVerde { background: green; padding: 10px; }
+    #caixaAzul { background: blue; padding: 10px; color: white; }
+
+    /* 17. CLASSE */
+    .destaque { color: crimson; }
+
+    /* 18. ID */
+    #caixaEstilizada { background: lightgray; border: 2px solid black; padding: 10px; }
+
+    /* 19. CLASSE */
+    .sublinhado { text-decoration: underline; }
+
+    /* 20. AGRUPADO */
+    h1, p, a { color: navy; }

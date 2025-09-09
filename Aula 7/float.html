@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplos de Float</title>
+  <style>
+    .caixa {
+      width: 120px;
+      height: 120px;
+      margin: 10px;
+      color: white;
+      text-align: center;
+      line-height: 120px;
+      font-weight: bold;
+    }
+
+    .left { background: crimson; float: left; }
+    .right { background: seagreen; float: right; }
+    .none { background: steelblue; float: none; }
+    .inlineStart { background: darkorange; float: inline-start; }
+    .inlineEnd { background: purple; float: inline-end; }
+
+    .container {
+      border: 2px dashed gray;
+      padding: 10px;
+      overflow: auto; /* "clear" automático pra não quebrar layout */
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Float: left</h2>
+  <div class="container">
+    <div class="caixa left">LEFT</div>
+    <p>Texto exemplo: esta caixa está com <b>float: left</b>, então o texto vai fluir ao lado dela.</p>
+  </div>
+
+  <h2>Float: right</h2>
+  <div class="container">
+    <div class="caixa right">RIGHT</div>
+    <p>Texto exemplo: esta caixa está com <b>float: right</b>, então o texto vai fluir à esquerda.</p>
+  </div>
+
+  <h2>Float: none</h2>
+  <div class="container">
+    <div class="caixa none">NONE</div>
+    <p>Com <b>float: none</b>, o bloco se comporta normalmente, ocupando sua posição natural no fluxo da página.</p>
+  </div>
+
+  <h2>Float: inline-start</h2>
+  <div class="container">
+    <div class="caixa inlineStart">START</div>
+    <p>Com <b>float: inline-start</b>, o elemento flutua no início da linha de escrita (em português, fica à esquerda).</p>
+  </div>
+
+  <h2>Float: inline-end</h2>
+  <div class="container">
+    <div class="caixa inlineEnd">END</div>
+    <p>Com <b>float: inline-end</b>, o elemento flutua no final da linha de escrita (em português, fica à direita).</p>
+  </div>
+</body>
+</html>
