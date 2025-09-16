@@ -1,0 +1,122 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f4f4;
+}
+h1 {
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  margin: 15px 0;
+  width: 60%;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 8px 12px;
+}
+
+
+.tabela1 { border: 1px solid black; }
+
+
+.tabela2 th {
+  background: lightgray;
+}
+
+
+.tabela3 {
+  color: blue;
+}
+
+
+.tabela4 {
+  font-family: Arial, sans-serif;
+}
+
+
+.tabela5 th {
+  font-size: 18px;
+}
+
+
+.tabela6 td {
+  background-color: rgb(92, 192, 232);
+}
+
+
+.tabela7 td, .tabela7 th {
+  text-align: center;
+}
+
+
+.tabela8 {
+  border: 3px solid black;
+}
+
+
+.tabela9 th {
+  color: red;
+}
+
+
+.tabela10 td, .tabela10 th {
+  padding: 15px;
+}
+
+
+.tabela11 td:first-child {
+  font-style: italic;
+}
+
+.tabela12 td {
+  font-weight: bold;
+}
+
+
+.tabela13 tr:first-child {
+  background: lightblue;
+}
+
+
+.tabela14 {
+  color: green;
+}
+
+
+.tabela15 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+
+.tabela16 tr:nth-child(2){
+  background: rgb(145, 40, 251);
+}
+
+
+.tabela17 th {
+  background: black;
+  color: white;
+}
+
+
+.tabela18 {
+  text-transform: uppercase;
+}
+
+
+.tabela19 th {
+  font-family: Georgia, serif;
+}
+
+
+.tabela20 {
+  color: rgb(255, 255, 255);
+  background: #3bae6743;
+}
+.tabela20 th {
+  font-weight: bold;
+  background: #fcb94683;
+}
