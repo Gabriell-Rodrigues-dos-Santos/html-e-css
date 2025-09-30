@@ -1,0 +1,41 @@
+/* Exercício 4 - Menu de Navegação */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background: #66bb6a;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,44 @@
+/* Exercício 6 - Figuras e Legendas */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4faff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #0288d1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+figure {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-style: italic;
+  color: #555;
+}

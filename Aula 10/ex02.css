@@ -1,0 +1,33 @@
+/* ================================
+   Exercício 2 - Reviews
+   ================================ */
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #fffaf5;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  color: #e65100;
+}
+
+article {
+  background: #fff3e0;
+  border-left: 6px solid #ff9800;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+article h2 {
+  margin-bottom: 10px;
+  color: #e65100;
+}

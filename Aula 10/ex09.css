@@ -1,0 +1,28 @@
+body { 
+    background-color: rgb(158, 146, 130);
+    font-family: Arial, sans-serif; 
+    margin: 20px;
+    
+ }
+ 
+ h1{
+    color: blue;
+    text-align: center;
+ }
+        details { 
+            background-color: rgb(64, 124, 124);
+        
+            margin-bottom: 10px; 
+            border: 1px solid #ccc;
+             padding: 10px;
+              border-radius: 5px;
+              color: white;
+         }
+        summary { 
+          
+            font-weight: bold;
+             cursor: pointer;
+         }
+         p{
+            color: rgb(250, 135, 135);
+         }
