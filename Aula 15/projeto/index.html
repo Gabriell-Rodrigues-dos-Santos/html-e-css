@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto Flexbox Completo</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column; /* organiza em coluna */
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between; /* espaço igual entre links */
+      background-color: #34495e;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1; /* ocupa todo espaço disponível */
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* centraliza horizontalmente */
+      justify-content: center; /* centraliza verticalmente */
+      background-color: #ecf0f1;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap; /* quebra linha automática */
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .galeria img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+     
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      display: flex;
+      justify-content: space-between; /* 3 seções lado a lado */
+      padding: 20px;
+    }
+
+    .footer-section {
+      flex: 1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projeto Flexbox</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <main>
+
+    <!-- Linha com 3 caixas distribuídas -->
+    <div class="linha">
+      <div class="caixa"></div>
+      <div class="caixa"></div>
+      <div class="caixa"></div>
+    </div>
+
+    <!-- Galeria responsiva -->
+    <div class="galeria">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiLwZE23iQg75Wu3qNOKeWoWGE6TlIdvSusw&s" alt="Imagem 1">
+      <img src="https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2025/11/cristiano_ronaldo-scaled-aspect-ratio-512-320.jpg" alt="Imagem 2">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTbrdpEHWz9w21q8qihSDUhYzwXaUnsdBQ2w&s" alt="Imagem 3">
+      <img src="https://livesport-ott-images.ssl.cdn.cra.cz/r900xfq60/a75cd92f-7752-4efb-b171-53a92ba0c7b3.jpeg" alt="Imagem 4">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwClLE2zjy9kN2dzGaCCIBfX8tZHg_Gld1eg&s" alt="Imagem 5">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdDpknGWb-qZz-wMswXr7G4kEIxA5-EuJoIw&s" alt="Imagem 6">
+    </div>
+</main>
+
+    <div class="linha1">
+      <div class="caixa"></div>
+      <div class="caixa"></div>
+      <div class="caixa"></div>
+    </div>
+
+  <footer>
+    <div class="footer-section">© 2025 Minha Empresa</div>
+    <div class="footer-section">Links Úteis</div>
+    <div class="footer-section">contato@empresa.com</div>
+  </footer>
+</body>
+</html>

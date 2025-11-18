@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Itens Quebrando Linha</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;       
+      gap: 10px;             
+      background-color: #00ffee;
+      padding: 20px;
+    }
+
+    .item {
+      flex: 0 0 150px;       /* Cada item terá largura fixa de 150px */
+      height: 100px;
+      background-color: #0f0f0f;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+</body>
+</html>

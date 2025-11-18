@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pizzaria artesanal com ingredientes frescos e sabores únicos. Venha conhecer nosso cardápio e ambiente acolhedor.">
+  <title>Pizzaria El Shaday</title>
+
+  <!-- W3.CSS e Fontes -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+  <!-- Estilos personalizados -->
+  <style>
+    html, body {
+      height: 100%;
+      font-family: "Amatic SC", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Fundo principal */
+    .bgimg {
+      background-image: url("https://www.ogastronomo.com.br/upload/1908864693-conheca-a-origem-da-pizza-frango-com-catupiry.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 90%;
+    }
+
+    /* Ocultar menus inicialmente */
+    .menu {
+      display: none;
+    }
+
+    /* Ajustes visuais */
+    .w3-bar-item {
+      letter-spacing: 2px;
+      
+    }
+
+    footer {
+      letter-spacing: 3px;
+    }
+
+    /* Hover suave */
+    .w3-button:hover {
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="w3-top w3-hide-small">
+    <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#about" class="w3-bar-item w3-button">Sobre</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contato</a>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-padding">
+      <span class="w3-tag w3-xlarge">Aberto das 10h às 22h</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <h1 class="w3-text-white" style="font-size:100px;">Pizzaria<br>El Shaday</h1>
+      <p><a href="#menu" class="w3-button w3-xxlarge w3-black w3-opacity-min">Ver Cardápio</a></p>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+
+    <!-- Seção do Menu -->
+    <section class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Cardápio</h1>
+
+        <!-- Tabs -->
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+          <button onclick="openMenu(event, 'Pizza')" id="defaultTab" class="w3-col s4 tablink w3-padding-large w3-hover-red w3-button">Pizzas</button>
+          <button onclick="openMenu(event, 'Pasta')" class="w3-col s4 tablink w3-padding-large w3-hover-red w3-button">Massas</button>
+          <button onclick="openMenu(event, 'Starter')" class="w3-col s4 tablink w3-padding-large w3-hover-red w3-button">Entradas</button>
+        </div>
+
+        <!-- Conteúdo das Abas -->
+        <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+          <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 42,90</span></h1>
+          <p class="w3-text-grey">Tomates frescos, mussarela de búfala e manjericão.</p>
+          <hr>
+
+          <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 48,00</span></h1>
+          <p class="w3-text-grey">Mix de quatro queijos: mussarela, parmesão, pecorino e gorgonzola.</p>
+          <hr>
+
+          <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Apimentada</span><span class="w3-right w3-tag w3-dark-grey w3-round">R$ 59,90</span></h1>
+          <p class="w3-text-grey">Pepperoni, calabresa, bacon e carne moída.</p>
+        </div>
+
+        <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+          <h1><b>Lasanha Bolonhesa</b> <span class="w3-tag w3-grey w3-round">Clássica</span> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 38,50</span></h1>
+          <p class="w3-text-grey">Molho de carne, mussarela e parmesão gratinado.</p>
+          <hr>
+
+          <h1><b>Ravioli de Queijo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 36,00</span></h1>
+          <p class="w3-text-grey">Recheado com queijo e servido com molho branco.</p>
+        </div>
+
+        <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+          <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 19,90</span></h1>
+          <p class="w3-text-grey">Pão italiano com tomates frescos, azeite e alho.</p>
+          <hr>
+
+          <h1><b>Pão de Alho</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$ 14,50</span></h1>
+          <p class="w3-text-grey">Tradicional e crocante, ideal como entrada.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Sobre Nós</h1>
+        <p>A <strong>Pizzaria El Shaday</strong> nasceu da paixão pela autêntica pizza italiana. Utilizamos ingredientes frescos e receitas tradicionais para garantir uma experiência única e o famoso geitinho brasileiro para dar aquele toque especial.</p>
+        <p><strong>Nosso Chef:</strong> Giovanni Romano <img src="/Modelo de Pizzaria/Imagens/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef da pizzaria"></p>
+        <img src="https://s2-g1.glbimg.com/JCmd-Ank1RVXBYf0yt775waSbBc=/0x0:1280x853/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/4/b/8KYfDwTVShoGQw7NsAZA/whatsapp-image-2019-07-05-at-08.48.39.jpeg" class="w3-margin-top w3-margin-bottom" style="width:100%;" alt="Interior do restaurante">
+      </div>
+    </section>
+
+    <!-- Image of location/map -->
+<img src="/Modelo de Pizzaria/Imagens/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+    <!-- Contato -->
+    <section class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contato</h1>
+        <p>📍 Rua das Pizzas, 123 - Centro | 📞 (11) 99999-9999</p>
+        <p><span class="w3-tag">Dica:</span> Fazemos eventos e catering sob medida!</p>
+
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" name="Name" placeholder="Nome" required></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="number" name="People" placeholder="Quantidade de pessoas" required></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" name="date" required></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" name="Message" placeholder="Mensagem ou pedido especial" required></p>
+          <p><button class="w3-button w3-light-grey w3-block" type="submit">Enviar Mensagem</button></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <p>© 2025 Pizzaria El Shaday | Desenvolvido por Gabriell Rodrigues dos Santos</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Função de alternância de menus
+    function openMenu(evt, menuName) {
+      const menus = document.getElementsByClassName("menu");
+      const tabs = document.getElementsByClassName("tablink");
+
+      // Oculta todos os menus
+      for (let i = 0; i < menus.length; i++) {
+        menus[i].style.display = "none";
+      }
+
+      // Remove destaque das abas
+      for (let i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("w3-red");
+      }
+
+      // Exibe o menu selecionado e destaca o botão
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.classList.add("w3-red");
+    }
+
+    // Abre a primeira aba por padrão
+    document.getElementById("defaultTab").click();
+  </script>
+
+</body>
+</html>

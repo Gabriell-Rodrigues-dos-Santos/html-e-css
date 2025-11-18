@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Imagens Responsivas com Flexbox</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;              /* Permite quebra de linha */
+      justify-content: center;      /* Centraliza horizontalmente */
+      gap: 20px;                  /* Espaçamento entre as imagens */
+    }
+
+    .container img {
+      width: 200px;                 /* largura fixa (pode ser % para responsivo) */
+      height: auto;                 /* mantém proporção */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTbrdpEHWz9w21q8qihSDUhYzwXaUnsdBQ2w&s" alt="Imagem 1">
+    <img src="https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2025/11/cristiano_ronaldo-scaled-aspect-ratio-512-320.jpg" alt="Imagem 2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiLwZE23iQg75Wu3qNOKeWoWGE6TlIdvSusw&s" alt="Imagem 3">
+  </div>
+</body>
+</html>

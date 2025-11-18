@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ordem Invertida com Flexbox</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row-reverse; /* Esse inverte a ordem dos itens */
+      gap: 10px;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: #000000;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+</body>
+</html>

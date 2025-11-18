@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Caixas Centralizadas Verticalmente</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;     /* Centraliza horizontalmente */
+      align-items: center;         /* Centraliza verticalmente */
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;      /* Alinha os itens verticalmente */
+      gap: 20px;                   /* Espaçamento entre as caixas */
+    }
+
+    .caixa {
+      width: 200px;
+      height: 60px;
+      background-color: #000000;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="caixa">Caixa 1</div>
+    <div class="caixa">Caixa 2</div>
+    <div class="caixa">Caixa 3</div>
+    <div class="caixa">Caixa 4</div>
+  </div>
+</body>
+</html>
